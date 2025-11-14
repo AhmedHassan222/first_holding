@@ -1494,3 +1494,9 @@ body {
     height: 200px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 50px;
+  }
+}
