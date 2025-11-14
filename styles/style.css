@@ -186,6 +186,18 @@ body {
   gap: 12px;
 }
 
+.logo-auth 
+{
+  width: 70px;
+}
+
+.main-content-auth 
+{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .btn-language,
 .btn-login {
   cursor: pointer;
