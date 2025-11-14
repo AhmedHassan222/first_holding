@@ -186,13 +186,11 @@ body {
   gap: 12px;
 }
 
-.logo-auth 
-{
-  width: 3.3rem !important;
+.logo-auth {
+  width: 50px;
 }
 
-.main-content-auth 
-{
+.main-content-auth {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -1511,4 +1509,11 @@ body {
   .logo {
     width: 50px;
   }
+
+
 }
+
+
+  .logo-auth {
+    width: 4.375rem !important;
+  }
