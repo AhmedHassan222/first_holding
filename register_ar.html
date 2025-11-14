@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيرست هولدينج - تمكين المعايير الوطنية</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- المحتوى الرئيسي -->
+    <section class="d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5">
+                    <!-- عنوان الصفحة -->
+                    <div class="text-center mb-4">
+                        <h1 class="page-title">إنشاء حسابك</h1>
+                        <p class="page-subtitle">ابدأ باستخدام خدمتنا في خطوات بسيطة.</p>
+                    </div>
+
+                    <!-- بطاقة نموذج التسجيل -->
+                    <div class="card border shadow-sm rounded-3 p-4">
+                        <form action="#" method="POST">
+                            <!-- حقل الاسم الكامل -->
+                            <div class="mb-4">
+                                <label for="FullName" class="form-label fw-medium">الاسم الكامل</label>
+                                <input type="text" class="form-control border rounded-3 py-2" id="FullName"
+                                    name="FullName" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+
+                            <!-- حقل البريد الإلكتروني -->
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-medium">البريد الإلكتروني / اسم المستخدم</label>
+                                <input type="email" class="form-control border rounded-3 py-2" id="email" name="email"
+                                    placeholder="أدخل بريدك الإلكتروني أو اسم المستخدم" required autocomplete="email">
+                            </div>
+
+                            <!-- حقل كلمة المرور -->
+                            <div class="mb-4">
+                                <label for="password" class="form-label fw-medium">كلمة المرور</label>
+                                <div class="position-relative">
+                                    <input type="password" class="form-control border rounded-3 py-2 password-field"
+                                        id="password" name="password" placeholder="أدخل كلمة المرور" required
+                                        autocomplete="new-password">
+                                    <button type="button"
+                                        class="password-toggle-btn position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-muted pe-3">
+                                        <span class="material-symbols-outlined">visibility_off</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- حقل تأكيد كلمة المرور -->
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="form-label fw-medium">تأكيد كلمة المرور</label>
+                                <div class="position-relative">
+                                    <input type="password" class="form-control border rounded-3 py-2 password-field"
+                                        id="confirmPassword" name="confirmPassword" placeholder="أدخل تأكيد كلمة المرور"
+                                        required autocomplete="new-password">
+                                    <button type="button"
+                                        class="password-toggle-btn position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-muted pe-3">
+                                        <span class="material-symbols-outlined">visibility_off</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- زر التسجيل -->
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-warning text-white fw-bold w-100 rounded-3 py-2">
+                                    إنشاء حساب
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- رابط تسجيل الدخول -->
+                        <div class="text-center">
+                            <p class="text-muted small mb-0">
+                                لديك حساب بالفعل؟
+                                <a href="./login_ar.html" class="text-warning text-decoration-none fw-medium">تسجيل
+                                    الدخول</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

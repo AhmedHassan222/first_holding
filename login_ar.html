@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيرست هولدينج - تمكين المعايير الوطنية</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- المحتوى الرئيسي -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5">
+                    <!-- عنوان الصفحة -->
+                    <div class="text-center mb-4">
+                        <h1 class="page-title">مرحبًا بعودتك</h1>
+                        <p class="page-subtitle">أدخل بياناتك لتسجيل الدخول إلى حسابك.</p>
+                    </div>
+
+                    <!-- نموذج تسجيل الدخول -->
+                    <div class="login-card">
+                        <form action="#" method="POST">
+                            <!-- حقل البريد الإلكتروني -->
+                            <div class="mb-4">
+                                <label for="email" class="form-label">البريد الإلكتروني / اسم المستخدم</label>
+                                <div class="input-icon-wrapper">
+                                    <input type="email" class="form-control custom-input" id="email" name="email"
+                                        placeholder="أدخل بريدك الإلكتروني أو اسم المستخدم" required
+                                        autocomplete="email">
+                                </div>
+                            </div>
+
+                            <!-- حقل كلمة المرور -->
+                            <div class="mb-4">
+                                <label for="password" class="form-label">كلمة المرور</label>
+                                <div class="input-icon-wrapper">
+                                    <input type="password" class="form-control custom-input password-input"
+                                        id="password" name="password" placeholder="أدخل كلمة المرور" required
+                                        autocomplete="current-password">
+                                    <button type="button" class="password-toggle">
+                                        <span class="material-symbols-outlined">visibility_off</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- نسيت كلمة المرور -->
+                            <div class="mb-4 text-end">
+                                <a href="#" class="forgot-link">هل نسيت كلمة المرور؟</a>
+                            </div>
+
+                            <!-- زر تسجيل الدخول -->
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-primary w-100 login-btn">تسجيل الدخول</button>
+                            </div>
+                        </form>
+
+                        <!-- رابط إنشاء حساب -->
+                        <div class="text-center">
+                            <p class="signup-text">
+                                لا تملك حسابًا؟
+                                <a href="./register_ar.html" class="signup-link">إنشاء حساب</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
