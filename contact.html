@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Holding - Empowering National Standards</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  py-1">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./assets/imgs/logo.png" alt="Logo">
+            </a>
+
+            <!-- External Actions (visible only on mobile) -->
+            <div class="external-actions d-lg-none">
+                <button class="btn-language" id="langBtn">
+                    <i class="fas fa-globe"></i>
+                    <span>ع</span>
+                </button>
+                <button class="btn-login" id="loginBtn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </div>
+
+            <!-- Custom Toggle button for mobile -->
+            <button class="navbar-toggler d-lg-none" type="button" id="navToggler">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <!-- Language and Login visible only on desktop -->
+                    <li class="nav-item desktop-only">
+                        <a class="nav-link btn-language-desktop" href="#language">
+                            <i class="fas fa-globe"></i>
+                            <span>ع</span>
+                        </a>
+                    </li>
+                    <li class="nav-item desktop-only">
+                        <a class="nav-link btn-login-desktop" href="./login.html">
+                            <i class="fas fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+    <section class="d-flex align-items-center min-vh-100 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="mb-2">
+                    <h1 class="display-5 fw-bold">Get In Touch</h1>
+                    <p class="text-muted fs-6">We'd love to hear from you. Fill out the form below or contact us
+                        directly.</p>
+                </div>
+                <!-- Left Column: Form -->
+                <div class="col-12 col-lg-6">
+                    <!-- Page Heading -->
+
+                    <!-- Contact Form -->
+                    <form action="#" method="POST" class="shadow-sm rounded-3 p-4 bg-white">
+                        <!-- Full Name Field -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control rounded-3 py-2" id="name" name="name"
+                                placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control rounded-3 py-2" id="email" name="email"
+                                placeholder="Enter your email address" required autocomplete="email">
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control rounded-3 py-2" id="message" name="message"
+                                placeholder="Enter your message" required rows="4"></textarea>
+                        </div>
+
+                        <!-- Send Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-warning text-white fw-bold rounded-3 py-2">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right Column: Contact Info -->
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Email -->
+                        <div class="shadow-sm rounded-3 p-3 bg-white">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="d-flex align-items-center justify-content-center shadow-sm rounded-3 p-1"
+                                    style=" background-color: rgba(246, 182, 19, 0.15); color: #f6b613;">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-2">Email</h3>
+                                    <p class="text-muted mb-2 small">Our friendly team is here to help.</p>
+                                    <a class="text-decoration-none fw-semibold" style="color: #f6b613;"
+                                        href="mailto:contact@company.com">info@firstholding-egy.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="shadow-sm rounded-3 p-3 bg-white">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="d-flex align-items-center justify-content-center shadow-sm rounded-3 p-1"
+                                    style=" background-color: rgba(246, 182, 19, 0.15); color: #f6b613;">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-2">Phone</h3>
+                                    <p class="text-muted mb-2 small">Mon-Fri from 8am to 5pm.</p>
+                                    <a class="text-decoration-none fw-semibold" style="color: #f6b613;"
+                                        href="tel:+15550000000">+1 (555) 000-0000</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Office -->
+                        <div class="shadow-sm rounded-3 p-3 bg-white">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="d-flex align-items-center justify-content-center shadow-sm rounded-3 p-1"
+                                    style=" background-color: rgba(246, 182, 19, 0.15); color: #f6b613;">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-2">Our Office</h3>
+                                    <p class="text-muted mb-2 small">Come say hello at our office.</p>
+                                    <p class="fw-medium mb-0">123 Business Avenue, Suite 100<br>Metropolis, ST 12345</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <img class="logo" src="./assets/imgs/logo.png" alt="Logo">
+                    </div>
+                    <p class="footer-description">Dedicated to upholding the highest standards of quality and integrity
+                        in accreditation services worldwide.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>123 Accreditation Ave, Quality City, 12345</li>
+                        <li>Email: contact@company.com</li>
+                        <li>Phone: +1 (234) 567-890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Company Name. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

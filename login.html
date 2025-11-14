@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Holding - Login page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- Main Content -->
+    <section class="main-content ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5">
+                    <!-- Page Heading -->
+                    <div class="text-center mb-4">
+                        <h1 class="page-title">Welcome Back</h1>
+                        <p class="page-subtitle">Enter your credentials to access your account.</p>
+                    </div>
+
+                    <!-- Login Form -->
+                    <div class="login-card">
+                        <form action="#" method="POST">
+                            <!-- Email Field -->
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email / Username</label>
+                                <div class="input-icon-wrapper">
+                                    <input type="email" class="form-control custom-input" id="email" name="email"
+                                        placeholder="Enter your email or username" required autocomplete="email">
+                                </div>
+                            </div>
+
+                            <!-- Password Field -->
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-icon-wrapper">
+                                    <input type="password" class="form-control custom-input password-input"
+                                        id="password" name="password" placeholder="Enter your password" required
+                                        autocomplete="current-password">
+                                    <button type="button" class="password-toggle">
+                                        <span class="material-symbols-outlined">visibility_off</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Forgot Password -->
+                            <div class="mb-4 text-end">
+                                <a href="#" class="forgot-link">Forgot Password?</a>
+                            </div>
+
+                            <!-- Login Button -->
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-primary w-100 login-btn">Log In</button>
+                            </div>
+                        </form>
+
+                        <!-- Sign Up Link -->
+                        <div class="text-center">
+                            <p class="signup-text">
+                                Don't have an account?
+                                <a href="./register.html" class="signup-link">Sign Up</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

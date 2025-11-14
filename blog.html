@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Holding - Empowering National Standards</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  py-1">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./assets/imgs/logo.png" alt="Logo">
+            </a>
+
+            <!-- External Actions (visible only on mobile) -->
+            <div class="external-actions d-lg-none">
+                <button class="btn-language" id="langBtn">
+                    <i class="fas fa-globe"></i>
+                    <span>ع</span>
+                </button>
+                <button class="btn-login" id="loginBtn">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </div>
+
+            <!-- Custom Toggle button for mobile -->
+            <button class="navbar-toggler d-lg-none" type="button" id="navToggler">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <!-- Language and Login visible only on desktop -->
+                    <li class="nav-item desktop-only">
+                        <a class="nav-link btn-language-desktop" href="#language">
+                            <i class="fas fa-globe"></i>
+                            <span>ع</span>
+                        </a>
+                    </li>
+                    <li class="nav-item desktop-only">
+                        <a class="nav-link btn-login-desktop" href="./login.html">
+                            <i class="fas fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Latest News Section -->
+    <section class="news-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Blog</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-card">
+                        <div class="news-image-wrapper overflow-hidden">
+                            <img src="./assets/imgs/Screenshot_3.png" alt="News 1" class="news-image">
+                        </div>
+                        <div class="news-content">
+                            <p class="news-date">October 26, 2023</p>
+                            <h3 class="news-title">
+                                Global Medical Technology in Egypt
+                            </h3>
+                            <p class="news-text">A brief look at the upcoming changes in accreditation standards
+                                that
+                                will be implemented next year.</p>
+                            <a href="#" class="news-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-card">
+                        <div class="news-image-wrapper overflow-hidden">
+                            <img src="./assets/imgs/Screenshot_4.png" alt="News 2" class="news-image">
+                        </div>
+                        <div class="news-content">
+                            <p class="news-date">October 15, 2023</p>
+                            <h3 class="news-title">Expertise and Leadership in Medical and Laboratory Equipment</h3>
+                            <p class="news-text">Key takeaways and insights from our successful annual conference on
+                                quality assurance.</p>
+                            <a href="#" class="news-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <img class="logo" src="./assets/imgs/logo.png" alt="Logo">
+                    </div>
+                    <p class="footer-description">Dedicated to upholding the highest standards of quality and integrity
+                        in accreditation services worldwide.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>123 Accreditation Ave, Quality City, 12345</li>
+                        <li>Email: contact@company.com</li>
+                        <li>Phone: +1 (234) 567-890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Company Name. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
