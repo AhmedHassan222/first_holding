@@ -91,8 +91,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* 
 
-    LOGIC CODE FOR swiper PACKAJE (هتاخد الكود زي ما هو و هيشتغل يحمص)
-
 */
 const swiper = new Swiper('.swiper', {
   slidesPerView: 5,
